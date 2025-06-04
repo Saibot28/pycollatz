@@ -1,6 +1,12 @@
 import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib.widgets import Button
+import tkinter as tk
+from tkinter import simpledialog
+from tkinter import messagebox
+
+root = tk.Tk()  # Create the main window 
+root.withdraw() # Hide the root window
 
 def collatz():
     num=0
@@ -11,9 +17,9 @@ def collatz():
     graph_Y = []        # create an empty list in graph_Y
 
     try:
-        num = int(input("Enter Collatz sequence seed: "))  # input seed and convert to integer
-    except ValueError:
-        print("Please input a valid integer.")
+        num = int(simpledialog.askstring("Input", "Enter Collatz sequence seed:"))      # open input window
+    except (TypeError, ValueError):                                                     # handle unsupported inputs
+        messagebox.showerror("Error", "Please input a valid integer.")
         return
 
     if num < 1:   # check if integer is positive and not equal to zero
@@ -34,6 +40,7 @@ def collatz():
     print("Collatz Sequence Length: "+str(seqLength))   # output sequence length
 
 def plotGraph():
+
     fig, ax = plt.subplots()                        # create graph
     ax.set_title("Collatz Sequence Graph")
     ax.grid(True)                                   # enable grid
@@ -47,20 +54,23 @@ def plotGraph():
     is_log_scale = [False]
     
     graph_X = list(range(1, seqLength+1))           # make x-axis length equal to value of seqLength
-    ax.plot(graph_X, graph_Y, marker='.')           # plot sequence graph
-    plt.show()                                      # display the created graph
+    ax.plot(graph_X, graph_Y, marker='.')           # plot sequence graph     
+
+    for x, y in zip(graph_X, graph_Y):
+        ax.text(x, y, y, fontsize=8, ha='left', va='bottom')    # add labels on points
+
 
     def toggle_scale(event):
         if is_log_scale[0]:
-            ax.set_yscale('linear')
-            is_log_scale[0] = False
+            ax.set_yscale('linear')     # makes graph linear
+            is_log_scale[0] = False     # updates flag accordingly
         else:
-            ax.set_yscale('log')
-            is_log_scale[0] = True
-        fig.canvas.draw_idle()
+            ax.set_yscale('log')        # makes graph logarithmic
+            is_log_scale[0] = True      # updates flag accordingly
+        fig.canvas.draw_idle()          # queues a redraw
 
-
-
+    button.on_clicked(toggle_scale)     # links the button object to the log/lin toggle
+    plt.show()                          # display the created graph
 
 collatz()       # run collatz() function
 plotGraph()     # run plotGraph() function
