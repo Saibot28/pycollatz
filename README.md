@@ -19,7 +19,7 @@ This visualizer isn't trying to solve the conjecture. It just makes watching the
 
 1. Run the script:
     ```bash
-    python collatz_plot.py
+    python3 collatz.py
     ```
 
 2. Enter any positive integer into the popup window.
