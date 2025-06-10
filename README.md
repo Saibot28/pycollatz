@@ -1,13 +1,13 @@
 # Collatz Sequence Visualizer
 
-This is a small Python program that generates and visualizes the Collatz sequence for any positive integer seed, with a toggleable logarithmic view.
+This is a small Python program that generates and visualizes the Collatz sequence for any positive integer seed, with a toggleable logarithmic view and toggleable labels.
 
 ### Features
 
 - Input any positive integer as a starting seed
 - Interactive matplotlib graph of the full Collatz sequence
-- Toggle between linear and logarithmic Y-axis scaling with a single button
-- Labels on every data point for maximum clarity and insight
+- Toggle between linear and logarithmic Y-axis scaling
+- Toggleable labels on every data point
 
 ### Why
 
@@ -25,8 +25,6 @@ This visualizer isn't trying to solve the conjecture. It just visualizes it.
 2. Enter any positive integer into the popup window.
 
 3. View the sequence plotted with labeled points.
-
-4. Click the "Toggle Log/Linear" button to switch between Y-axis scales and explore the behavior visually.
 
 ### Requirements
 
