@@ -1,6 +1,6 @@
-# Collatz Sequence Visualizer
+# HaylStone
 
-This is a small Python program that generates and visualizes the Collatz sequence for any positive integer seed, with a toggleable logarithmic view and toggleable labels.
+HaylStone is a small Python program that generates and visualizes the Collatz sequence for any positive integer seed, with an optional logarithmic view and toggleable labels.
 
 ### Features
 
