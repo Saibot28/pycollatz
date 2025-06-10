@@ -46,14 +46,14 @@ def plotGraph():
     ax.set_xlabel('Iteration')
     ax.set_ylabel('Value')
     
-    plt.subplots_adjust(bottom=0.2)                     # adjust for button
+    plt.subplots_adjust(bottom=0.2)                         # adjust for button
     
-    ax_button = plt.axes([0.7, 0.05, 0.2, 0.075])       # specify button size
-    log_button = Button(ax_button, 'Toggle Log/Linear') # create button instance
+    ax_button = plt.axes([0.7, 0.05, 0.2, 0.075])           # specify button size
+    log_button = Button(ax_button, 'Toggle Log/Linear')     # create button instance
     is_log_scale = [False]
 
-    ax_button = plt.axes([0.125, 0.05, 0.2, 0.075])       # specify button size
-    lbl_button = Button(ax_button, 'Show/Hide Labels')  # create button instance
+    ax_button = plt.axes([0.125, 0.05, 0.2, 0.075])         # specify button size
+    lbl_button = Button(ax_button, 'Show/Hide Labels')      # create button instance
     hide_labels = [False]
     
     graph_X = list(range(1, seqLength+1))           # make x-axis length equal to value of seqLength
