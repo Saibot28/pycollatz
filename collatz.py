@@ -46,18 +46,21 @@ def plotGraph():
     ax.set_xlabel('Iteration')
     ax.set_ylabel('Value')
     
-    plt.subplots_adjust(bottom=0.2)                 # adjust for button
+    plt.subplots_adjust(bottom=0.2)                     # adjust for button
     
-    ax_button = plt.axes([0.7, 0.05, 0.2, 0.075])   # specify button size
-    button = Button(ax_button, 'Toggle Log/Linear') # create button instance
+    ax_button = plt.axes([0.7, 0.05, 0.2, 0.075])       # specify button size
+    log_button = Button(ax_button, 'Toggle Log/Linear') # create button instance
     is_log_scale = [False]
+
+    ax_button = plt.axes([0.125, 0.05, 0.2, 0.075])       # specify button size
+    lbl_button = Button(ax_button, 'Show/Hide Labels')  # create button instance
+    hide_labels = [False]
     
     graph_X = list(range(1, seqLength+1))           # make x-axis length equal to value of seqLength
-    ax.plot(graph_X, graph_Y, marker='.')           # plot sequence graph     
+    ax.plot(graph_X, graph_Y, marker='.')           # plot sequence graph
 
     for x, y in zip(graph_X, graph_Y):
         ax.text(x, y, y, fontsize=8, ha='left', va='bottom')    # add labels on points
-
 
     def toggle_scale(event):
         if is_log_scale[0]:
@@ -68,8 +71,20 @@ def plotGraph():
             is_log_scale[0] = True      # updates flag accordingly
         fig.canvas.draw_idle()          # queues a redraw
 
-    button.on_clicked(toggle_scale)     # links the button object to the log/lin toggle
-    plt.show()                          # display the created graph
+    def toggle_labels(event):
+        if hide_labels[0]:
+            for x, y in zip(graph_X, graph_Y):
+                ax.text(x, y, y, fontsize=8, ha='left', va='bottom')    # adds labels back
+            hide_labels[0] = False                                      # updates flag accordingly
+        else:
+            for txt in ax.texts:        # go through all text elements in graph
+                txt.remove()            # delete the text element
+            hide_labels[0] = True       # updates flag accordingly
+        fig.canvas.draw_idle()          # queues a redraw
+
+    log_button.on_clicked(toggle_scale)     # links the button object to the log/lin toggle
+    lbl_button.on_clicked(toggle_labels)
+    plt.show()                              # display the created graph
 
 collatz()       # run collatz() function
 plotGraph()     # run plotGraph() function
