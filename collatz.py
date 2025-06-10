@@ -1,5 +1,4 @@
 import matplotlib.pyplot as plt
-import numpy as np
 from matplotlib.widgets import Button
 import tkinter as tk
 from tkinter import simpledialog
