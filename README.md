@@ -13,7 +13,7 @@ This is a small Python program that generates and visualizes the Collatz sequenc
 
 The Collatz conjecture is one of the simplest unsolved problems in mathematics — take any positive integer, halve it if it's even, or triple it and add one if it's odd, and repeat. The conjecture states that eventually, every number reaches a loop of 4, 2, 1.
 
-This visualizer isn't trying to solve the conjecture. It just makes watching the chaos a little more beautiful.
+This visualizer isn't trying to solve the conjecture. It just visualizes it.
 
 ### Usage
 
