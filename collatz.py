@@ -48,7 +48,7 @@ def plotGraph():
     
     plt.subplots_adjust(bottom=0.2)                 # adjust for button
     
-    ax_button = plt.axes([0.7, 0.05, 0.2, 0.075])   # specify button position
+    ax_button = plt.axes([0.7, 0.05, 0.2, 0.075])   # specify button size
     button = Button(ax_button, 'Toggle Log/Linear') # create button instance
     is_log_scale = [False]
     
