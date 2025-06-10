@@ -5,8 +5,8 @@ import tkinter as tk
 from tkinter import simpledialog
 from tkinter import messagebox
 
-root = tk.Tk()  # Create the main window 
-root.withdraw() # Hide the root window
+root = tk.Tk()  # create the main window 
+root.withdraw() # hide the root window
 
 def collatz():
     num=0
