@@ -35,3 +35,7 @@ This visualizer isn't trying to solve the conjecture. It just visualizes it.
 ---
 
 Made for fun. Use it, break it, or build on it. Just don’t try to prove Collatz with it. (Unless you do. In which case, DM me.)
+
+## License
+
+This project is licensed under the [MIT License](./LICENSE).
