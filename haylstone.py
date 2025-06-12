@@ -37,6 +37,7 @@ def collatz():
     print("1")                                          # print final number
     graph_Y.append(1)
     print("Collatz Sequence Length: "+str(seqLength))   # output sequence length
+    return True
 
 def plotGraph():
 
