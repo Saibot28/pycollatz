@@ -20,7 +20,7 @@ This visualizer isn't trying to solve the conjecture. It just visualizes it.
 
 1. Clone the repository and enter it:
     ```bash
-    git clone https://github.com/Saibot28/HaylStone.git
+    git clone https://github.com/Saibot28/HaylStone
     cd HaylStone
     ```
     
