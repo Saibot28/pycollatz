@@ -18,7 +18,13 @@ This visualizer isn't trying to solve the conjecture. It just visualizes it.
 
 ### Usage
 
-1. Run the script:
+1. Clone the repository and enter it:
+    ```bash
+    git clone https://github.com/Saibot28/HaylStone.git
+    cd HaylStone
+    ```
+    
+2. Run the script:
     ```bash
     python3 haylstone.py
     ```
@@ -27,9 +33,9 @@ This visualizer isn't trying to solve the conjecture. It just visualizes it.
     python3 haylstone_terminal.py
     ```
 
-2. Enter any positive integer into the popup window.
+3. Enter any positive integer into the popup window.
 
-3. View the sequence plotted linearly or logarithmically with or without labeled points.
+4. View the sequence plotted linearly or logarithmically with or without labeled points. (For the terminal version, go to the `plots` directory and open the images)
 
 ### Requirements
 
