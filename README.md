@@ -1,6 +1,6 @@
 # HaylStone
 
-HaylStone is a small Python program that generates and visualizes the Collatz sequence for any positive integer seed, with an optional logarithmic view and toggleable labels.
+HaylStone is a small Python program that generates and visualizes the Collatz sequence for any positive integer seed, with an optional logarithmic view and toggleable labels, and a terminal-friendly version included.
 
 ### Features
 
@@ -8,6 +8,7 @@ HaylStone is a small Python program that generates and visualizes the Collatz se
 - Interactive matplotlib graph of the full Collatz sequence
 - Toggle between linear and logarithmic Y-axis scaling
 - Toggleable labels on every data point
+- A second program that will run in the terminal and save images of the plot.
 
 ### Why
 
@@ -19,18 +20,22 @@ This visualizer isn't trying to solve the conjecture. It just visualizes it.
 
 1. Run the script:
     ```bash
-    python3 collatz.py
+    python3 haylstone.py
+    ```
+    or:
+    ```bash
+    python3 haylstone_terminal.py
     ```
 
 2. Enter any positive integer into the popup window.
 
-3. View the sequence plotted with labeled points.
+3. View the sequence plotted linearly or logarithmically with or without labeled points.
 
 ### Requirements
 
 - Python 3.x
 - `matplotlib` (usually installable with `pip install matplotlib`)
-- `tkinter` (included with most Python installations)
+- `tkinter` (included with most Python installations) (not required for haylstone_terminal)
 
 ---
 
