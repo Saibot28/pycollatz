@@ -1,10 +1,6 @@
 # HaylStone
 > A small Python visualizer for the Collatz sequence with interactive graphs and terminal support.
 
-![Python](https://img.shields.io/badge/Python-3.x-blue.svg)
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
-
-
 HaylStone is a small Python program that generates and visualizes the Collatz sequence for any positive integer seed, with an optional logarithmic view and toggleable labels, and a terminal-friendly version included.
 
 ### Features
@@ -55,3 +51,6 @@ Made for fun. Use it, break it, or build on it. Just don’t try to prove Collat
 ## License
 
 This project is licensed under the [MIT License](./LICENSE).
+
+![Python](https://img.shields.io/badge/Python-3.x-blue.svg)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
