@@ -86,5 +86,5 @@ def plotGraph():
     lbl_button.on_clicked(toggle_labels)
     plt.show()                              # display the created graph
 
-collatz()       # run collatz() function
-plotGraph()     # run plotGraph() function
+if collatz():       # run collatz() function
+    plotGraph()     # run plotGraph() function
