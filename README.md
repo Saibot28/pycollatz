@@ -40,7 +40,11 @@ This visualizer isn't trying to solve the conjecture. It just visualizes it.
 
 3. Enter any positive integer into the popup window.
 
-4. View the sequence plotted linearly or logarithmically with or without labeled points. (For the terminal version, go to the `plots` directory (which is created in your user directory) and open the images)
+4. View the sequence plotted linearly or logarithmically with or without labeled points. For the terminal version, go to the `plots` directory and open the images.
+   ```bash
+   cd $HOME
+   cd plots
+   ```
 
 ### Requirements
 
