@@ -17,7 +17,7 @@ HaylStone is a small Python program that generates and visualizes the Collatz se
 
 ### Why
 
-The Collatz conjecture is one of the simplest unsolved problems in mathematics — take any positive integer, halve it if it's even, or triple it and add one if it's odd, and repeat. The conjecture states that eventually, every number reaches a loop of 4, 2, 1.
+The Collatz conjecture is one of the simplest unsolved problems in mathematics — take any positive integer, halve it if it's even, or triple it and add one if it's odd, and repeat. The conjecture states that eventually, every number reaches a loop of 4, 2, 1. Go to https://en.wikipedia.org/wiki/Collatz_conjecture for more in-depth information on the conjecture.
 
 This visualizer isn't trying to solve the conjecture. It just visualizes it.
 
